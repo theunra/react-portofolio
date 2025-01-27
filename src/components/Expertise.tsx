@@ -1,17 +1,15 @@
 import React from "react";
 import '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faReact, faDocker, faPython } from '@fortawesome/free-brands-svg-icons';
+import { faReact, faDocker, faPython, faRaspberryPi } from '@fortawesome/free-brands-svg-icons';
 import Chip from '@mui/material/Chip';
 import '../assets/styles/Expertise.scss';
 
 const labelsFirst = [
-    "React",
-    "TypeScript",
-    "JavaScript",
-    "HTML5",
-    "CSS3",
-    "SASS",
+    "ReactJs",
+    "NextJs",
+    "NodeJs",
+    "NestJs",
     "Flask",
     "Python",
     "SQL",
@@ -20,25 +18,16 @@ const labelsFirst = [
 ];
 
 const labelsSecond = [
-    "Git",
-    "GitHub Actions",
-    "Docker",
-    "AWS",
-    "Azure",
-    "Linux",
-    "Snowflake",
-    "Pandas",
-    "Selenium",
+    "PyTorch",
+    "Tensorflow",    
 ];
 
 const labelsThird = [
-    "OpenAI",
-    "Groq",
-    "LangChain",
-    "Qdrant",
-    "Hugging Face",
-    "LlamaIndex",
-    "Streamlit",
+    "Arduino",
+    "STM",
+    "ESP32",
+    "Raspberry Pi",
+    "MQTT",
 ];
 
 function Expertise() {
@@ -50,7 +39,7 @@ function Expertise() {
                 <div className="skill">
                     <FontAwesomeIcon icon={faReact} size="3x"/>
                     <h3>Full Stack Web Development</h3>
-                    <p>I have built a diverse array of web applications from scratch using modern technologies such as React and Flask. I have a strong proficiency in the SDLC process and frontend + backend development.</p>
+                    <p>I specialize in building dynamic and scalable web applications. On the backend, I have experience with Node.js + Express, NestJS, and Flask, creating robust APIs and managing server-side logic. On the frontend, I craft responsive and user-friendly interfaces using ReactJS, Next.js, Flask, and Flutter. My expertise spans the full development lifecycle, from designing efficient architectures to deploying high-quality solutions.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsFirst.map((label, index) => (
@@ -60,9 +49,9 @@ function Expertise() {
                 </div>
 
                 <div className="skill">
-                    <FontAwesomeIcon icon={faDocker} size="3x"/>
-                    <h3>DevOps & Automation</h3>
-                    <p>Once the application is built, I help clients set up DevOps testing, CI/CD pipelines, and deployment automation to support the successful Go-Live.</p>
+                    <FontAwesomeIcon icon={faPython} size="3x"/>
+                    <h3>AI Devleopment</h3>
+                    <p>I specialize in designing and implementing AI systems with a focus on practical applications. I developed an AI solution for coffee roasting crack sound detection using RNN deep learning architectures, ensuring precise identification of critical roasting stages. My work highlights the integration of advanced AI models into real-world applications.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsSecond.map((label, index) => (
@@ -72,9 +61,9 @@ function Expertise() {
                 </div>
 
                 <div className="skill">
-                    <FontAwesomeIcon icon={faPython} size="3x"/>
-                    <h3>GenAI & LLM</h3>
-                    <p>Stay relevant in the market by leveraging the latest AI models in your projects. I have professional experience building enterprise grade GenAI-enabled solutions to empower intelligent decision making.</p>
+                    <FontAwesomeIcon icon={faRaspberryPi} size="3x"/>
+                    <h3>IoT & Embedded</h3>
+                    <p>As a hardware engineer, I specialize in IoT development, designing and implementing systems using microcontrollers such as Arduino, STM, and ESP32, as well as single-board computers like Raspberry Pi. My expertise bridges hardware and software, enabling the creation of innovative and connected IoT solutions.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsThird.map((label, index) => (
